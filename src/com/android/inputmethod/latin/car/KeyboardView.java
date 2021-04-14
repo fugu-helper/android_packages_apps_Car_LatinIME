@@ -289,6 +289,7 @@ public class KeyboardView extends View implements View.OnClickListener {
     public KeyboardView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         mContext = context;
+        mAccessibilityManager = (AccessibilityManager) context.getSystemService(Context.ACCESSIBILITY_SERVICE);
 
         TypedArray a =
                 context.obtainStyledAttributes(
